@@ -9,7 +9,7 @@ import { useState } from 'react';
 const PickCity = ({ action}) => {
   const [city, setCity] = useState('');
 
- const handleSubmit = (e) => {
+ const handleSubmit = e => {
     e.preventDefault();
     
 	action(city);
